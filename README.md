@@ -24,12 +24,12 @@ As seguintes tecnologias foram utilizadas no desenvolvimento:
 
 ## ✨ Funcionalidades
 
-- 🐶 **Catálogo de animais:** visualização dos pets disponíveis para adoção.
-- 🔎 **Pesquisa e filtros:** recursos para facilitar a busca pelos animais.
-- 📝 **Solicitação de adoção:** formulário para registrar o interesse em adotar um pet.
-- ✅ **Aprovação de solicitações:** ao aprovar uma solicitação, a adoção é concluída e o animal deixa de receber novos pedidos.
-- ❌ **Rejeição de solicitações:** quando uma solicitação é rejeitada, o animal volta a ficar disponível para novas solicitações.
-- 📱 **Interface responsiva:** adaptação da aplicação para diferentes tamanhos de tela.
+-  **Catálogo de animais:** visualização dos pets disponíveis para adoção.
+-  **Pesquisa e filtros:** recursos para facilitar a busca pelos animais.
+-  **Solicitação de adoção:** formulário para registrar o interesse em adotar um pet.
+-  **Aprovação de solicitações:** ao aprovar uma solicitação, a adoção é concluída e o animal deixa de receber novos pedidos.
+-  **Rejeição de solicitações:** quando uma solicitação é rejeitada, o animal volta a ficar disponível para novas solicitações.
+-  **Interface responsiva:** adaptação da aplicação para diferentes tamanhos de tela.
 
 ## 🧠 Conceitos aplicados
 
