@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PetMatch: conheça animais disponíveis para adoção responsável.">
+  <title>PetMatch | Adoção responsável</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="PetMatch, página inicial">🐾 PetMatch</a>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a href="#pets">Conheça os pets</a></li>
+        <li><a href="#adocao">Quero adotar</a></li>
+        <li><a href="#solicitacoes">Solicitações</a></li>
+      </ul>
+    </nav>
+    <a class="header-cta" href="#pets">Encontrar um amigo</a>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">ADOÇÃO RESPONSÁVEL</p>
+        <h1 id="hero-title">Um novo melhor amigo está esperando por você.</h1>
+        <p>Conheça animais cheios de carinho e encontre um companheiro para chamar de seu. Adotar transforma duas vidas.</p>
+        <a class="button button-primary" href="#pets">Ver animais disponíveis</a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração decorativa de patinhas e um coração">
+        <span class="hero-paw">🐾</span><span class="hero-heart">💚</span>
+        <span class="hero-note">Amor não se compra.<br>Se adota.</span>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">COMO FUNCIONA</p>
+        <h2 id="intro-title">A adoção começa com um encontro.</h2>
+      </div>
+      <p>Explore os perfis, escolha um pet compatível com sua rotina e envie uma solicitação. A equipe fictícia do PetMatch analisará o pedido antes de concluir a adoção.</p>
+    </section>
+
+    <section class="pets-section section-wrap" id="pets" aria-labelledby="pets-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">NOSSO CATÁLOGO</p><h2 id="pets-title">Conheça nossos pets</h2></div>
+        <p id="pets-count" class="muted" aria-live="polite">Carregando animais...</p>
+      </div>
+      <form class="filter-bar" id="filtro-form">
+        <div class="field">
+          <label for="busca">Buscar pelo nome</label>
+          <input type="search" id="busca" placeholder="Ex.: Mel">
+        </div>
+        <div class="field">
+          <label for="filtro-especie">Espécie</label>
+          <select id="filtro-especie">
+            <option value="todas">Todas</option><option value="Cão">Cão</option><option value="Gato">Gato</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="filtro-porte">Porte</label>
+          <select id="filtro-porte">
+            <option value="todos">Todos</option><option value="Pequeno">Pequeno</option><option value="Médio">Médio</option><option value="Grande">Grande</option>
+          </select>
+        </div>
+        <button class="button button-dark filter-button" type="submit">Filtrar</button>
+      </form>
+      <div class="pet-grid" id="lista-pets" aria-live="polite"></div>
+      <p class="empty-state" id="pets-vazio" hidden>Nenhum pet encontrado com esses filtros.</p>
+    </section>
+
+    <section class="adoption-section" id="adocao" aria-labelledby="adocao-title">
+      <div class="section-wrap adoption-layout">
+        <div class="adoption-copy">
+          <p class="eyebrow">PRÓXIMO PASSO</p>
+          <h2 id="adocao-title">Preencha sua intenção de adoção</h2>
+          <p>Conte um pouco sobre você. Os dados são armazenados somente neste navegador para a demonstração acadêmica.</p>
+          <aside class="info-card">
+            <strong>Antes de adotar</strong>
+            <p>Considere tempo, espaço, custos veterinários e compromisso com o bem-estar do animal durante toda a vida.</p>
+          </aside>
+        </div>
+        <form class="adoption-form" id="form-adocao" novalidate>
+          <div class="field">
+            <label for="adotante">Nome completo</label>
+            <input id="adotante" name="adotante" type="text" autocomplete="name" required aria-describedby="adotante-ajuda adotante-erro" aria-invalid="false">
+            <small id="adotante-ajuda">Informe seu nome para registrar a solicitação.</small>
+            <small class="error-message" id="adotante-erro" role="alert" hidden></small>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-ajuda email-erro" aria-invalid="false">
+            <small id="email-ajuda">Usaremos este endereço apenas como dado demonstrativo.</small>
+            <small class="error-message" id="email-erro" role="alert" hidden></small>
+          </div>
+          <div class="field">
+            <label for="pet-escolhido">Pet desejado</label>
+            <select id="pet-escolhido" name="pet" required aria-describedby="pet-ajuda pet-erro" aria-invalid="false">
+              <option value="">Selecione um animal</option>
+            </select>
+            <small id="pet-ajuda">Somente animais disponíveis podem receber solicitações.</small>
+            <small class="error-message" id="pet-erro" role="alert" hidden></small>
+          </div>
+          <div class="field">
+            <label for="motivo">Por que deseja adotar?</label>
+            <textarea id="motivo" name="motivo" rows="3" required aria-describedby="motivo-ajuda motivo-erro" aria-invalid="false"></textarea>
+            <small id="motivo-ajuda">Escreva pelo menos 5 caracteres.</small>
+            <small class="error-message" id="motivo-erro" role="alert" hidden></small>
+          </div>
+          <button class="button button-primary button-full" type="submit">Enviar solicitação</button>
+          <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="requests-section section-wrap" id="solicitacoes" aria-labelledby="requests-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">ACOMPANHAMENTO</p><h2 id="requests-title">Solicitações recebidas</h2></div>
+        <p class="muted">Área demonstrativa de gerenciamento</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <caption>Solicitações de adoção registradas neste navegador</caption>
+          <thead><tr><th scope="col">Interessado</th><th scope="col">Pet</th><th scope="col">Data</th><th scope="col">Status</th><th scope="col">Ação</th></tr></thead>
+          <tbody id="tabela-solicitacoes"><tr><td colspan="5">Nenhuma solicitação cadastrada.</td></tr></tbody>
+        </table>
+      </div>
+      <p class="management-note">Regra do projeto: cada pet pode ter apenas uma solicitação ativa. Ao aprovar uma solicitação, o pet passa para “Adotado” e não aceita novos pedidos. Esta simulação não substitui uma avaliação real de adoção.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="brand footer-brand" href="#inicio">🐾 PetMatch</a><p>Conectando pessoas e animais por meio da adoção responsável.</p></div>
+    <p>Projeto acadêmico fictício · Desenvolvimento Web</p>
+  </footer>
+</body>
+</html>
