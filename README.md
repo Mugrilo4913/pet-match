@@ -6,15 +6,13 @@ O **Pet Match** é uma aplicação web desenvolvida como projeto acadêmico, com
 
 O projeto foi desenvolvido em um curto período, com foco na aplicação prática de conhecimentos de desenvolvimento web, organização de código e construção de interfaces responsivas.
 
----
-
-## 📌 Sobre o projeto
+## Sobre o projeto
 
 A aplicação simula uma plataforma de adoção de animais, permitindo que os usuários visualizem os pets disponíveis e realizem solicitações de adoção.
 
 Além da interface, o projeto conta com regras de negócio para gerenciar o processo de adoção, considerando diferentes situações das solicitações e a disponibilidade dos animais.
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 As seguintes tecnologias foram utilizadas no desenvolvimento:
 
@@ -22,7 +20,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento:
 - **CSS3:** estilização, organização visual e responsividade.
 - **JavaScript:** implementação das funcionalidades, interações e regras de negócio.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 -  **Catálogo de animais:** visualização dos pets disponíveis para adoção.
 -  **Pesquisa e filtros:** recursos para facilitar a busca pelos animais.
@@ -31,7 +29,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento:
 -  **Rejeição de solicitações:** quando uma solicitação é rejeitada, o animal volta a ficar disponível para novas solicitações.
 -  **Interface responsiva:** adaptação da aplicação para diferentes tamanhos de tela.
 
-## 🧠 Conceitos aplicados
+## Conceitos aplicados
 
 Durante o desenvolvimento, foram trabalhados conceitos importantes de desenvolvimento front-end:
 
@@ -43,7 +41,7 @@ Durante o desenvolvimento, foram trabalhados conceitos importantes de desenvolvi
 - Validação de formulários.
 - Implementação de regras de negócio e gerenciamento de estados.
 
-## 💻 Como executar o projeto
+## Como executar o projeto
 
 Não é necessário instalar dependências para executar a aplicação.
 
@@ -54,15 +52,13 @@ Não é necessário instalar dependências para executar a aplicação.
 
 Pronto! A aplicação estará disponível para utilização.
 
-## 🎯 Objetivo acadêmico
+## Objetivo acadêmico
 
 O Pet Match foi desenvolvido como um projeto acadêmico de menor escala, com o objetivo de exercitar conhecimentos adquiridos durante a graduação e transformá-los em uma aplicação funcional.
 
 Mesmo sendo um projeto desenvolvido em pouco tempo, representa uma experiência importante no meu processo de aprendizado e evolução na área de tecnologia.
 
----
-
-## 👨‍💻 Desenvolvedor
+## Desenvolvedor
 
 Desenvolvido por **Murilo**.
 
