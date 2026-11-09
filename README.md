@@ -1,6 +1,6 @@
 # 🐾 Pet Match
 
-### Conectando pessoas a novos companheiros!
+## Conectando pessoas a novos companheiros!
 
 O **Pet Match** é uma aplicação web desenvolvida como projeto acadêmico, com a proposta de incentivar a adoção responsável de animais e proporcionar uma experiência simples e intuitiva para pessoas interessadas em encontrar um novo companheiro.
 
